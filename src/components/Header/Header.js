@@ -65,7 +65,7 @@ const Header = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <Logo>Owhab</Logo>
+          <Logo>Z-Mart</Logo>
         </Center>
         <Right>
           <MenuItem>REGISTER</MenuItem>
