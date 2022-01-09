@@ -68,6 +68,7 @@ const Header = () => {
           <Logo>Z-Mart</Logo>
         </Center>
         <Right>
+          <MenuItem>PRODUCTS</MenuItem>
           <MenuItem>REGISTER</MenuItem>
           <MenuItem>LOGIN</MenuItem>
           <MenuItem>

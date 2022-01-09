@@ -1,9 +1,31 @@
 import React from "react";
+import styled from "styled-components";
+import Announcement from "../Announcement/Announcement";
+import Categories from "../Categories/Categories";
+import Footer from "../Footer/Footer";
+import Header from "../Header/Header";
+import { Newsletter } from "../Newsletter/Newsletter";
+import Products from "../Products/Products";
+import Slider from "../Slider/Slider";
+
+const Heading = styled.h1`
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+`;
 
 const Home = () => {
   return (
     <div>
-      <h1>This is Home Page.. </h1>
+      <Announcement></Announcement>
+      <Header></Header>
+      <Slider></Slider>
+      <Heading>Categories</Heading>
+      <Categories></Categories>
+      <Heading>Popular Products</Heading>
+      <Products></Products>
+      <Newsletter></Newsletter>
+      <Footer></Footer>
     </div>
   );
 };
