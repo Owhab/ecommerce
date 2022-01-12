@@ -1,6 +1,7 @@
 import { Add, Remove } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
+import mobile from "../../responsive";
 import Announcement from "../Announcement/Announcement";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
@@ -8,6 +9,8 @@ import Header from "../Header/Header";
 const Container = styled.div``;
 const Wrapper = styled.div`
   padding: 20px;
+
+  ${mobile({ padding: "10px" })}
 `;
 const Title = styled.h1`
   font-weight: 300;
@@ -18,6 +21,8 @@ const Top = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+
+  ${mobile({ padding: "10px", flexDirection: "column" })}
 `;
 const TopButton = styled.button`
   padding: 10px;
@@ -29,7 +34,9 @@ const TopButton = styled.button`
     props.type === "filled" ? "black" : "transparent"};
 `;
 
-const TopTexts = styled.div``;
+const TopTexts = styled.div`
+  ${mobile({ margin: "10px 0" })}
+`;
 const TopText = styled.span`
   text-decoration: underline;
   cursor: pointer;
@@ -38,6 +45,8 @@ const TopText = styled.span`
 const Bottom = styled.div`
   display: flex;
   justify-content: space-between;
+
+  ${mobile({ flexDirection: "column" })}
 `;
 const Info = styled.div`
   flex: 3;
@@ -46,13 +55,19 @@ const Info = styled.div`
 const Product = styled.div`
   display: flex;
   justify-content: space-between;
+
+  ${mobile({ flexDirection: "column" })}
 `;
 const ProductDetail = styled.div`
   display: flex;
   flex: 2;
+
+  ${mobile({ flex: 4 })}
 `;
 const Image = styled.img`
   width: 200px;
+
+  ${mobile({ width: "150px" })}
 `;
 const Details = styled.div`
   padding: 20px;
@@ -91,6 +106,8 @@ const ProductAmount = styled.div`
 const ProductPrice = styled.div`
   font-size: 30px;
   font-weight: 200;
+
+  ${mobile({ marginBottom: "20px" })}
 `;
 const Hr = styled.hr`
   background-color: #eee;
@@ -103,6 +120,8 @@ const Summary = styled.div`
   border: 0.5px solid lightgray;
   padding: 20px;
   height: 50vh;
+
+  ${mobile({ margin: "10px" })}
 `;
 
 const SummaryTitle = styled.h1`

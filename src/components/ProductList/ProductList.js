@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import mobile from "../../responsive";
 import Announcement from "../Announcement/Announcement";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
@@ -15,6 +16,8 @@ const Title = styled.h1`
 const FilterContainer = styled.div`
   display: flex;
   justify-content: space-between;
+
+  ${mobile({ flexDirection: "column" })}
 `;
 const Filter = styled.div`
   margin: 20px;

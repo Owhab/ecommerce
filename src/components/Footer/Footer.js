@@ -9,9 +9,12 @@ import {
 } from "@material-ui/icons";
 import React from "react";
 import styled from "styled-components";
+import mobile from "../../responsive";
 
 const Container = styled.div`
   display: flex;
+
+  ${mobile({ flexDirection: "column " })}
 `;
 const Left = styled.div`
   flex: 1;
@@ -44,6 +47,7 @@ const ListItem = styled.li`
 const Right = styled.div`
   flex: 1;
   padding: 20px;
+  ${mobile({ backgroundColor: "#eee" })}
 `;
 const Logo = styled.h1``;
 const Description = styled.p`
